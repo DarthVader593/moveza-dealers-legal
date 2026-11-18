@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Privacy policy for dealers — Moveza Dealers</title>
+  <meta name="description" content="How Moveza Dealers handles data from introduction or inventory-pilot requests.">
+  <link rel="icon" href="../dealers-static/assets/favicon.png" type="image/png">
+  <link rel="alternate" hreflang="es-US" href="../privacidad/">
+  <link rel="alternate" hreflang="en" href="">
+  <style>
+
+    @font-face { font-family: "Outfit"; src: url("../dealers-static/fonts/Outfit-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
+    @font-face { font-family: "Outfit"; src: url("../dealers-static/fonts/Outfit-SemiBold.ttf") format("truetype"); font-weight: 600; font-style: normal; font-display: swap; }
+    @font-face { font-family: "Outfit"; src: url("../dealers-static/fonts/Outfit-Bold.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: swap; }
+    @font-face { font-family: "Inter"; src: url("../dealers-static/fonts/Inter-Regular.otf") format("opentype"); font-weight: 400; font-style: normal; font-display: swap; }
+    @font-face { font-family: "Inter"; src: url("../dealers-static/fonts/Inter-Medium.otf") format("opentype"); font-weight: 500; font-style: normal; font-display: swap; }
+    @font-face { font-family: "Inter"; src: url("../dealers-static/fonts/Inter-SemiBold.otf") format("opentype"); font-weight: 600; font-style: normal; font-display: swap; }
+
+    :root {
+      --navy: #0A1A33;
+      --navy-2: #13294B;
+      --line: #24406B;
+      --amber: #FFB020;
+      --ivory: #F6F3EC;
+      --steel: #9DB0CC;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      font-feature-settings: "cv08" 1;
+      background-color: var(--navy);
+      background-image: repeating-linear-gradient(
+        -45deg,
+        var(--navy) 0 14px,
+        var(--navy-2) 14px 15px
+      );
+      color: var(--ivory);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--amber); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { color: var(--ivory); }
+
+    .wrap {
+      width: min(720px, calc(100% - 2rem));
+      margin: 0 auto;
+    }
+
+    header.top {
+      padding: 1.25rem 0 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    header.top img {
+      height: 52px;
+      width: auto;
+    }
+    header.top .langs {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-family: Outfit, sans-serif;
+      font-weight: 600;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    header.top .langs a { color: var(--steel); text-decoration: none; }
+    header.top .langs a:hover { color: var(--ivory); }
+    header.top .langs a[aria-current="page"] {
+      color: var(--amber);
+      pointer-events: none;
+    }
+    header.top .langs .sep { color: var(--line); }
+
+    .hero { padding: 1.5rem 0 0.25rem; }
+    .kicker {
+      font-family: Inter, sans-serif;
+      font-weight: 600;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin: 0 0 0.75rem;
+    }
+    h1 {
+      font-family: Outfit, sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.7rem, 6vw, 2.4rem);
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.85rem;
+    }
+    .lede {
+      color: var(--steel);
+      font-size: 1.02rem;
+      max-width: 40rem;
+      margin: 0;
+    }
+    .meta-date {
+      margin: 1rem 0 0;
+      font-family: Outfit, sans-serif;
+      font-weight: 600;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      color: var(--ivory);
+    }
+    .meta-date span { color: var(--amber); }
+
+    article.policy {
+      margin: 1.5rem 0 0;
+      background: var(--navy-2);
+      border: 1px solid var(--line);
+      border-radius: 2px;
+      padding: 1.35rem 1.15rem 1.6rem;
+    }
+    article.policy h2 {
+      font-family: Outfit, sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+      margin: 1.45rem 0 0.55rem;
+    }
+    article.policy h2:first-child { margin-top: 0; }
+    article.policy p { margin: 0 0 0.7rem; }
+    article.policy ul {
+      margin: 0 0 0.7rem;
+      padding: 0 0 0 1.15rem;
+    }
+    article.policy li { margin: 0.3rem 0; }
+    .muted { color: var(--steel); }
+
+    footer {
+      margin-top: 2.25rem;
+      padding: 1.5rem 0 2.25rem;
+      border-top: 1px solid var(--line);
+      color: var(--steel);
+      font-size: 0.82rem;
+    }
+    footer p { margin: 0 0 0.45rem; }
+    footer strong { color: var(--ivory); font-weight: 600; }
+
+    @media (min-width: 640px) {
+      header.top img { height: 64px; }
+      article.policy { padding: 1.6rem 1.5rem 1.85rem; }
+    }
+
+    header.top .langs .is-lang { color: var(--amber); }
+  </style>
+</head>
+<body>
+<!--
+  [CONFIRMAR] itens para o Rodrigo (não aparecem na página publicada):
+  1. Controlador: o texto usa "Moveza Dealers". No rodapé público de movezausa.com (JS Footer, conferido em 16/11/2026) aparece "© 2026 Moveza Inc.". A conta de anúncios Meta 1178940768146270 está em nome da Nexor Motors. Não há EIN, CNPJ nem endereço verificado no site. Confirmar a razão social que deve constar aqui.
+  2. Retenção sugerida: 12 meses a partir do envio, ou até pedido de exclusão.
+  3. Canal de exclusão: telefone/WhatsApp +1 (650) 677-3076 (publicado no rodapé do site). A caixa contato@moveza.com não recebe e-mail e não é citada. Confirmar que alguém de fato atende pedidos de exclusão nesse número, das 9h às 18h ET, enquanto não houver e-mail.
+-->
+
+  <div class="wrap">
+    <header class="top">
+      <img src="../dealers-static/assets/lockup-negativo.png" width="256" height="56" alt="Moveza Dealers">
+      <div class="langs" role="navigation" aria-label="Language">
+        <a href="../privacidad/" lang="es" hreflang="es-US">ES</a><span class="sep" aria-hidden="true">|</span><span aria-current="page" class="is-lang">EN</span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <p class="kicker">Moveza Dealers · movezausa.com</p>
+      <h1>Privacy policy for dealer inquiries</h1>
+      <p class="lede">This page explains how we handle the personal data you submit when you request an introduction or the inventory pilot, including through the Meta instant form (Facebook and Instagram) and, if it is published, through the form on the dealers page.</p>
+      <p class="meta-date">Effective <span>November 18, 2026</span></p>
+    </section>
+
+    <article class="policy">
+      <h2>1. Who controls the data</h2>
+      <p>The controller of this data is <strong>Moveza Dealers</strong>, the service available at <a href="https://www.movezausa.com">movezausa.com</a>. Moveza Dealers is not a dealership: it acts as an intermediary and publishes inventory from partner dealers to Hispanic buyers in the United States.</p>
+      <p class="muted">The name used on this page is the service name, Moveza Dealers, at movezausa.com. If you need the legal entity name, you can request it through the contact channel below.</p>
+
+      <h2>2. What we collect</h2>
+      <p>We collect only what you enter in the form, or what Meta pre-fills — if you confirm it — from your Facebook or Instagram profile:</p>
+      <ul>
+        <li>Name</li>
+        <li>Dealership (store) name</li>
+        <li>City and state</li>
+        <li>Phone number</li>
+        <li>Email address</li>
+        <li>Approximate inventory (up to 20 cars, 20–50, or 50 or more)</li>
+        <li>What you are interested in: an introduction, or starting to upload inventory</li>
+        <li>Preferred language (Spanish or English)</li>
+        <li>Your consent for us to contact you about this request</li>
+      </ul>
+      <p>We do not ask for a Social Security number (SSN), EIN, bank details, passwords, or credit information. Please do not send that kind of information through the form.</p>
+
+      <h2>3. How we use the data</h2>
+      <p>We use it only to respond to your request: to contact you at the phone number or email you provided, to explain the Moveza Dealers model and, if applicable, the pilot of up to 10 cars for 30 days, and to coordinate the next steps you agree to. No listing of your inventory is published without your confirmation.</p>
+      <p>We do not use this data to sell you third-party products or to treat you as a car buyer.</p>
+
+      <h2>4. Legal basis and consent</h2>
+      <p>We process this data because you submit it and agree that Moveza Dealers may contact you solely about this request. You may ask us not to contact you again, or to delete your data, as explained below.</p>
+
+      <h2>5. Who we share it with</h2>
+      <ul>
+        <li><strong>Meta Platforms, Inc.</strong> (Facebook and Instagram) is the platform for the instant form. The submission takes place in its apps or site, and Moveza Dealers receives the content of your request through Meta’s lead ads / instant form tools. Meta also processes that data under its own privacy policy.</li>
+        <li>People on the Moveza Dealers team who need the data in order to read the request and reply to you.</li>
+      </ul>
+      <p>We do not sell your data. We do not share it with other dealers or with buyers for their own marketing. We may disclose information if the law requires us to do so.</p>
+
+      <h2>6. How long we keep it</h2>
+      <p>We keep it for <strong>12 months</strong> from the date you submit the form, or we delete it sooner if you request deletion. If a business relationship later begins (for example, if you join the pilot), we may keep what is needed for that relationship and for legal obligations; we will explain that at the time.</p>
+
+      <h2>7. Your rights and how to request deletion</h2>
+      <p>You may ask us to confirm what data we hold about this request, to correct it or delete it, and not to contact you again about this request.</p>
+      <p>Until a Moveza Dealers email address that can receive messages is in place, the way to make these requests is the phone or WhatsApp number published on movezausa.com: <strong><a href="https://wa.me/16506773076">+1 (650) 677-3076</a></strong>. Please include your name, the dealership name, and the email or phone you used on the form, so we can find your request.</p>
+
+      <h2>8. Changes</h2>
+      <p>If this policy changes in a material way, we will update this page and the effective date.</p>
+
+      <h2>9. Contact</h2>
+      <p><strong>Moveza Dealers</strong> · <a href="https://www.movezausa.com">movezausa.com</a><br>
+      Phone / WhatsApp: <a href="https://wa.me/16506773076">+1 (650) 677-3076</a></p>
+    </article>
+
+    <footer>
+      <p><strong>Moveza Dealers</strong> · <a href="https://www.movezausa.com">movezausa.com</a></p>
+      <p><a href="../privacidad/" lang="es" hreflang="es-US">Versión en español</a></p>
+      <p>Identity: navy and amber of Moveza Dealers.</p>
+    </footer>
+  </div>
+</body>
+</html>
